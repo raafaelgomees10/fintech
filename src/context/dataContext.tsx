@@ -21,7 +21,7 @@ type IDataContext = {
 type IVenda = {
   id: string;
   nome: string;
-  preco: string;
+  preco: number;
   status: "pago" | "processando" | "falha";
   pagamento: "boleto" | "cartao" | "pix";
   data: string;

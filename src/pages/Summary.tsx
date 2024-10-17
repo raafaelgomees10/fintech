@@ -3,7 +3,45 @@ import { useData } from "../context/dataContext";
 const Summary = () => {
   const { data } = useData();
   console.log(data);
-  return <div>Summary</div>;
+
+  if (data === null) {
+    return null;
+  }
+
+  return (
+    <section>
+      <div className="sumary flex mb">
+        <div className="box">
+          <h2>Vendas</h2>
+          <span>
+            {data
+              .filter((it) => it.status !== "falha")
+              .reduce((acc, item) => acc + item.preco, 0)
+              .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
+          </span>
+        </div>
+        <div className="box">
+          <h2>Recebido</h2>
+          <span>
+            {data
+              .filter((it) => it.status === "pago")
+              .reduce((acc, item) => acc + item.preco, 0)
+              .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
+          </span>
+        </div>
+        <div className="box">
+          <h2>Processando</h2>
+          <span>
+            {data
+              .filter((it) => it.status === "processando")
+              .reduce((acc, item) => acc + item.preco, 0)
+              .toLocaleString("pt-br", { style: "currency", currency: "BRL" })}
+          </span>
+        </div>
+      </div>
+      <div className="box">Graficos</div>
+    </section>
+  );
 };
 
 export default Summary;

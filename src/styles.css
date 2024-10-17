@@ -75,3 +75,15 @@ ul{
     gap: var(--gap);
 
 }
+
+/* sumary */
+.sumary{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sumary h2{
+    font-size: 1.5rem;
+    color: var(--color-1);
+    margin-bottom: var(--gap);
+}
