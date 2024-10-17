@@ -5,6 +5,7 @@ import configuracoes from "../../assets/icons/configuracoes.svg";
 import contato from "../../assets/icons/contato.svg";
 import sair from "../../assets/icons/sair.svg";
 import FintechSVG from "../../assets/FintechSVG";
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -15,13 +16,13 @@ const Menu = () => {
           <span>
             <img src={resumo} alt="menu icon" />
           </span>
-          <a href="">Resumo</a>
+          <NavLink to="/">Resumo</NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="menu icon" />
           </span>
-          <a href="">Vendas</a>
+          <NavLink to="/sales">Sales</NavLink>
         </li>
         <li>
           <span>
