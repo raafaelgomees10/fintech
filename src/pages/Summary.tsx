@@ -3,7 +3,6 @@ import { useData } from "../context/dataContext";
 
 const Summary = () => {
   const { data } = useData();
-  console.log(data);
 
   if (data === null) {
     return null;
