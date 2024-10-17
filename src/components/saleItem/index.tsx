@@ -1,9 +1,10 @@
+import * as S from "./styles";
 import { NavLink } from "react-router-dom";
 import { IVenda } from "../../context/dataContext";
 
 const SaleItem = ({ sale }: { sale: IVenda }) => {
   return (
-    <div className="sale box">
+    <S.Container className="box">
       <NavLink to={`/sales/${sale.id}`} style={{ fontFamily: "monospace" }}>
         {sale.id}
       </NavLink>
@@ -14,7 +15,7 @@ const SaleItem = ({ sale }: { sale: IVenda }) => {
           currency: "BRL",
         })}
       </div>
-    </div>
+    </S.Container>
   );
 };
 

@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import * as S from "./styles";
 import DateRange from "../dateRange";
 import MonthGroup from "../monthGroup";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -19,10 +20,10 @@ const Header = () => {
 
   return (
     <header className="mb">
-      <div className="daterange mb">
+      <S.Content className="mb">
         <DateRange />
         <h1 className="box bg3">{title}</h1>
-      </div>
+      </S.Content>
       <MonthGroup />
     </header>
   );

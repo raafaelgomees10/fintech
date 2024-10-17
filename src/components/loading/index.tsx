@@ -1,28 +1,22 @@
-import { CSSProperties } from "react";
+import styled, { keyframes } from "styled-components";
 
-const styles: CSSProperties = {
-  border: "var(--gap-s) solid var(--color-2)",
-  borderRightColor: "var(--color-4)",
-  width: "var(--gap)",
-  height: "var(--gap)",
-  borderRadius: "50%",
-  animation: "spin 1s infinite",
-};
+const spin = keyframes`
+to{
+    transform: rotate(360deg)
+}`;
+
+const Container = styled.div`
+  border: ${(props) => props.theme.space.small} solid
+    ${(props) => props.theme.colors.color2};
+  border-right-color: ${(props) => props.theme.colors.color4};
+  width: ${(props) => props.theme.space.normal};
+  height: ${(props) => props.theme.space.normal};
+  border-radius: 50%;
+  animation: ${spin} 1s infinite;
+`;
 
 const Loading = () => {
-  return (
-    <div style={styles}>
-      <style>
-        {`
-            @keyframes spin{
-                to{
-                transform: rotate(360deg);
-                }
-            }
-            `}
-      </style>
-    </div>
-  );
+  return <Container />;
 };
 
 export default Loading;

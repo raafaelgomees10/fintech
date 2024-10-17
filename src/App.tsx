@@ -1,11 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/header";
-import Menu from "./components/menu";
-import { DataContextProvider } from "./context/dataContext";
-import Sales from "./pages/Sales";
-import Summary from "./pages/Summary";
-import "./styles.css";
 import Sale from "./pages/Sale";
+import Sales from "./pages/Sales";
+import Menu from "./components/menu";
+import Summary from "./pages/Summary";
+import Header from "./components/header";
+import { DataContextProvider } from "./context/dataContext";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (

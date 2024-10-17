@@ -1,55 +1,61 @@
-import resumo from "../../assets/icons/resumo.svg";
-import vendas from "../../assets/icons/vendas.svg";
-import webhooks from "../../assets/icons/webhooks.svg";
-import configuracoes from "../../assets/icons/configuracoes.svg";
-import contato from "../../assets/icons/contato.svg";
+import * as S from "./styles";
+import { NavLink } from "react-router-dom";
 import sair from "../../assets/icons/sair.svg";
 import FintechSVG from "../../assets/FintechSVG";
-import { NavLink } from "react-router-dom";
+import resumo from "../../assets/icons/resumo.svg";
+import vendas from "../../assets/icons/vendas.svg";
+import contato from "../../assets/icons/contato.svg";
+import webhooks from "../../assets/icons/webhooks.svg";
+import configuracoes from "../../assets/icons/configuracoes.svg";
 
 const Menu = () => {
   return (
-    <nav className="sidenav box bg3">
+    <S.SideNav className="sidenav box bg3">
       <FintechSVG title="Fintech Logo" />
-      <ul>
-        <li>
-          <span>
+      <S.List>
+        <S.Item>
+          <S.Span>
             <img src={resumo} alt="menu icon" />
-          </span>
+          </S.Span>
           <NavLink to="/">Resumo</NavLink>
-        </li>
-        <li>
-          <span>
+        </S.Item>
+
+        <S.Item>
+          <S.Span>
             <img src={vendas} alt="menu icon" />
-          </span>
+          </S.Span>
           <NavLink to="/sales">Sales</NavLink>
-        </li>
-        <li>
-          <span>
+        </S.Item>
+
+        <S.Item>
+          <S.Span>
             <img src={webhooks} alt="menu icon" />
-          </span>
+          </S.Span>
           <a>WebHooks</a>
-        </li>
-        <li>
-          <span>
+        </S.Item>
+
+        <S.Item>
+          <S.Span>
             <img src={configuracoes} alt="menu icon" />
-          </span>
+          </S.Span>
           <a>Configurações</a>
-        </li>
-        <li>
-          <span>
+        </S.Item>
+
+        <S.Item>
+          <S.Span>
             <img src={contato} alt="menu icon" />
-          </span>
+          </S.Span>
           <a>Contato</a>
-        </li>
-        <li>
-          <span>
+        </S.Item>
+
+        <S.Item>
+          <S.Span>
             <img src={sair} alt="menu icon" />
-          </span>
+          </S.Span>
           <a>Sair</a>
-        </li>
-      </ul>
-    </nav>
+        </S.Item>
+      </S.List>
+    </S.SideNav>
   );
 };
 
