@@ -46,8 +46,8 @@ const SalesChart = ({ data }: { data: IVenda[] }) => {
   return (
     <ResponsiveContainer width="99%" height={400}>
       <LineChart data={transformedData}>
-        <XAxis dataKey="date" />
-        <YAxis />
+        <XAxis dataKey="date" fontSize="1rem" />
+        <YAxis fontSize="1.125rem" />
         <Tooltip />
         <Legend />
         <Line type="monotone" dataKey="pago" stroke="#A36AF9" strokeWidth={3} />

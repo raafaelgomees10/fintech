@@ -24,7 +24,7 @@ const Menu = () => {
           <S.Span>
             <img src={vendas} alt="menu icon" />
           </S.Span>
-          <NavLink to="/sales">Sales</NavLink>
+          <NavLink to="/vendas">Vendas</NavLink>
         </S.Item>
 
         <S.Item>

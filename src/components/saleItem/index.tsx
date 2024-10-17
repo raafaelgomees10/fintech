@@ -5,7 +5,7 @@ import { IVenda } from "../../context/dataContext";
 const SaleItem = ({ sale }: { sale: IVenda }) => {
   return (
     <S.Container className="box">
-      <NavLink to={`/sales/${sale.id}`} style={{ fontFamily: "monospace" }}>
+      <NavLink to={`/vendas/${sale.id}`} style={{ fontFamily: "monospace" }}>
         {sale.id}
       </NavLink>
       <div>{sale.nome}</div>

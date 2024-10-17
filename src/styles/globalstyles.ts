@@ -42,6 +42,9 @@ button{
     background: ${(props) => props.theme.colors.color5};
     border-radius: ${(props) => props.theme.space.normal};
     padding: ${(props) => props.theme.space.normal};
+
+
+    /* outline: 2px solid ${(props) => props.theme.colors.color1}; */
 }
 
 .flex{

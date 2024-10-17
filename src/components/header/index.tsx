@@ -5,16 +5,16 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [title, setTitle] = useState("Summary");
+  const [title, setTitle] = useState("Resumo");
   const location = useLocation();
 
   useEffect(() => {
     if (location.pathname === "/") {
-      setTitle("Summary");
-      document.title = "Fintech | Summary";
-    } else if (location.pathname === "/sales") {
-      setTitle("Sales");
-      document.title = "Fintech | Sales";
+      setTitle("Resumo");
+      document.title = "Fintech | Resumo";
+    } else if (location.pathname === "/vendas") {
+      setTitle("Vendas");
+      document.title = "Fintech | Vendas";
     }
   }, [location]);
 
