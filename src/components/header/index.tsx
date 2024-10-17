@@ -1,10 +1,14 @@
 import DateRange from "../dateRange";
+import MonthGroup from "../monthGroup";
 
 const Header = () => {
   return (
-    <div>
-      <DateRange />
-    </div>
+    <header className="mb">
+      <div className="mb">
+        <DateRange />
+      </div>
+      <MonthGroup />
+    </header>
   );
 };
 
