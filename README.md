@@ -21,9 +21,9 @@ You can view the [application deploy.]()
 ## :technologist: Technologies Used
 
 - React
-- Redux
 - TypeScript
 - Recharts
+- styled-components
 - react-router-dom
 
 ## Installation and Setup
