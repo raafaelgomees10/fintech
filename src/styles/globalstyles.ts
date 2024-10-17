@@ -42,8 +42,8 @@ button{
     background: ${(props) => props.theme.colors.color5};
     border-radius: ${(props) => props.theme.space.normal};
     padding: ${(props) => props.theme.space.normal};
-
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+   
     /* outline: 2px solid ${(props) => props.theme.colors.color1}; */
 }
 
