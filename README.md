@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+<h1 align="center"> :moneybag: Fintech Project :chart_with_upwards_trend:</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Overview
 
-Currently, two official plugins are available:
+This project is a web application built with React and TypeScript, developed as the final project for Origamid's React with TypeScript course. The fictional application tracks sales, allowing users to search for sales by date, access the details of specific sales, or view all sales. It also features a summary page that displays graphs and general values based on applied filters. The interface is responsive and provides a smooth user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the [application deploy.]()
 
-## Expanding the ESLint configuration
+## :memo: Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Design:** The application is fully responsive, ensuring a seamless experience across various devices.
 
-- Configure the top-level `parserOptions` property like this:
+- **Date Search:** Users can search for sales based on date ranges, making it easy to find relevant information.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Specific Sale View:** Users can access the details of a specific sale or view all available sales.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Summary Page:** The summary page provides dynamic graphs and overall sales values, offering a comprehensive view of filtered data.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Interactive Graph:** Using the Recharts library, dynamic graphs are generated to visually represent sales and their results.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## :technologist: Technologies Used
+
+- React
+- Redux
+- TypeScript
+- Recharts
+- react-router-dom
+
+## Installation and Setup
+
+To run this project locally:
+
+1. Clone the repository:
+   `git clone https://github.com/raafaelgomees10/fintech.git`
+
+2. Navigate to the project directory:
+   `cd fintech`
+
+3. Install the dependencies:
+   `npm install or yarn install`
+
+4. Start the development server:
+   `npm run dev or yarn dev`
+
+## Contact
+
+Take a look at my [portfolio](https://rafaelgomes.netlify.app?utm_source=github&utm_medium=readme_project&utm_campaign=fintech).
+
+<a href="https://www.linkedin.com/in/dev-rafael-gomes/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width="30" height="30" alt="Rafael-linkedin"></a>
+<a href="https://www.facebook.com/rafael.gomes.961pl/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/facebook/facebook-original.svg" width="30" height="30" alt="Rafael-facebook"></a>
+
+:copyright: Developed with 💜 by **[Rafael Gomes](https://rafaelgomes.netlify.app?utm_source=github&utm_medium=readme_project&utm_campaign=fintech)**

@@ -16,6 +16,7 @@ export const Item = styled.li`
 
   > a {
     color: ${(props) => props.theme.colors.color1};
+    cursor: pointer;
     flex: 1;
     font-size: 1.125rem;
     margin: 0.25rem 0;

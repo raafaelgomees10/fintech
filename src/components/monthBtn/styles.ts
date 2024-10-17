@@ -6,7 +6,10 @@ export const Button = styled.button`
   border-radius: ${(props) => props.theme.space.normal};
   color: ${(props) => props.theme.colors.color2};
   font-weight: 600;
-  padding: ${(props) => props.theme.space.normal}
-    ${(props) => props.theme.space.small};
+  padding: ${(props) => props.theme.space.normal};
   text-transform: capitalize;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
