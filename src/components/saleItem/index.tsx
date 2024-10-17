@@ -1,11 +1,12 @@
+import { NavLink } from "react-router-dom";
 import { IVenda } from "../../context/dataContext";
 
 const SaleItem = ({ sale }: { sale: IVenda }) => {
   return (
     <div className="sale box">
-      <a href="" style={{ fontFamily: "monospace" }}>
+      <NavLink to={`/sales/${sale.id}`} style={{ fontFamily: "monospace" }}>
         {sale.id}
-      </a>
+      </NavLink>
       <div>{sale.nome}</div>
       <div>
         {sale.preco.toLocaleString("pt-BR", {
