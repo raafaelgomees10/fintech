@@ -39,7 +39,7 @@ const Summary = () => {
           </span>
         </div>
       </div>
-      <div className="box">Graficos</div>
+      <div className="box mb">Graficos</div>
     </section>
   );
 };
